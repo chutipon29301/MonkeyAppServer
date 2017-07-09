@@ -1,0 +1,24 @@
+{
+  "name": "monkeytutor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chutipon29301/MonkeyTutor.git"
+  },
+  "author": "Chutipon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chutipon29301/MonkeyTutor/issues"
+  },
+  "homepage": "https://github.com/chutipon29301/MonkeyTutor#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mongodb": "^2.2.30"
+  }
+}

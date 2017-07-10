@@ -6,6 +6,13 @@ let log = function(data){
     }
 }
 
+let error = function(data){
+    if(config.debugMode){
+        console.error(data);
+    }
+}
+
 module.exports = {
-    log: log
+    log: log,
+    error: error
 }

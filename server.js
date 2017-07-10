@@ -1,11 +1,13 @@
-var MongoClient = require('mongodb').MongoClient;
-var assert = require('assert');
-var chalk = require('chalk');
-var express = require('express');
-var config = require('./config.js');
-var global = require('./global.js');
+import MongoClient from 'mongodb';
+import assert from 'assert';
+import chalk from 'chalk';
+import express from 'express';
+import config from './config.js';
+import global from './global.js';
 
 var app = express();
+
+// app.listen()
 
 MongoClient.connect(config.db.url + config.db.database, function (err, db) {
     assert.equal(null, err, '[ERROR] Cannot connect to ' + config.db.database);

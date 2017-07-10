@@ -1,7 +1,11 @@
-var config = require('./config');
+import {config} from './config.js';
 
-module.exports.log = function (data) {
+let log = function(data){
     if (config.debugMode) {
         console.log(data);
     }
+}
+
+module.exports = {
+    log: log
 }

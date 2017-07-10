@@ -1,7 +1,9 @@
-import MongoClient from 'mongodb';
+import {MongoClient} from 'mongodb';
+import {RxHttpRequest} from 'rx-http-request';
 import assert from 'assert';
 import chalk from 'chalk';
 import express from 'express';
+
 import config from './config.js';
 import global from './global.js';
 
